@@ -1,0 +1,165 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE319DCB-457A-4AA9-B85B-EC32F1165B63}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoInvoncie</RootNamespace>
+    <AssemblyName>DemoInvoncie</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.XtraBars.v21.2" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nSoft.Shared.Common">
+      <HintPath>..\..\..\..\Downloads\nSoft.Shared.Common\nSoft.Shared.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchiveType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArchiveType.Designer.cs">
+      <DependentUpon>ArchiveType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deneme.Designer.cs">
+      <DependentUpon>deneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevexpressConfigurations\GridAppearance.cs" />
+    <Compile Include="EInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EInvoice.Designer.cs">
+      <DependentUpon>EInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoncieType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoncieType.Designer.cs">
+      <DependentUpon>InvoncieType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoncie\NewInvoncieCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoncie\NewInvoncieCreate.Designer.cs">
+      <DependentUpon>NewInvoncieCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NilveraApi\Archive\ApiSeries.cs" />
+    <Compile Include="NilveraApi\Archive\ApiTemplates.cs" />
+    <Compile Include="NilveraApi\AuthorizationApi.cs" />
+    <Compile Include="NilveraApi\Currency.cs" />
+    <Compile Include="NilveraApi\Invoncie\EInvoiceDraftList.cs" />
+    <Compile Include="NilveraApi\General\GlobalCompanySearch.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ArchiveType.resx">
+      <DependentUpon>ArchiveType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deneme.resx">
+      <DependentUpon>deneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EInvoice.resx">
+      <DependentUpon>EInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoncieType.resx">
+      <DependentUpon>InvoncieType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoncie\NewInvoncieCreate.resx">
+      <DependentUpon>NewInvoncieCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NLayer.Entities\NLayer.Entities.csproj">
+      <Project>{FB70291A-64E8-424E-A4F3-2E54BF4E4059}</Project>
+      <Name>NLayer.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+C:\Users\fakia\source\repos\Efatura\NLayer.Entities\bin\Debug\NLayer.Entities.dll
+C:\Users\fakia\source\repos\Efatura\NLayer.Entities\bin\Debug\NLayer.Entities.pdb
+C:\Users\fakia\source\repos\Efatura\NLayer.Entities\obj\Debug\NLayer.Entities.csproj.AssemblyReference.cache
+C:\Users\fakia\source\repos\Efatura\NLayer.Entities\obj\Debug\NLayer.Entities.csproj.CoreCompileInputs.cache
+C:\Users\fakia\source\repos\Efatura\NLayer.Entities\obj\Debug\NLayer.Entities.dll
+C:\Users\fakia\source\repos\Efatura\NLayer.Entities\obj\Debug\NLayer.Entities.pdb

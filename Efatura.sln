@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoInvoncie", "DemoInvoncie\DemoInvoncie.csproj", "{AE319DCB-457A-4AA9-B85B-EC32F1165B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayer.Entities", "NLayer.Entities\NLayer.Entities.csproj", "{FB70291A-64E8-424E-A4F3-2E54BF4E4059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE319DCB-457A-4AA9-B85B-EC32F1165B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE319DCB-457A-4AA9-B85B-EC32F1165B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE319DCB-457A-4AA9-B85B-EC32F1165B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE319DCB-457A-4AA9-B85B-EC32F1165B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB70291A-64E8-424E-A4F3-2E54BF4E4059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB70291A-64E8-424E-A4F3-2E54BF4E4059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB70291A-64E8-424E-A4F3-2E54BF4E4059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB70291A-64E8-424E-A4F3-2E54BF4E4059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC85EC4F-42C5-422D-80B5-90E1CF636799}
+	EndGlobalSection
+EndGlobal
