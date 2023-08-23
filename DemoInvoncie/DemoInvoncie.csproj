@@ -62,10 +62,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArchiveType.cs">
+    <Compile Include="Invoncie\ArchiveType.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ArchiveType.Designer.cs">
+    <Compile Include="Invoncie\ArchiveType.Designer.cs">
       <DependentUpon>ArchiveType.cs</DependentUpon>
     </Compile>
     <Compile Include="deneme.cs">
@@ -87,10 +87,10 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="InvoncieType.cs">
+    <Compile Include="Invoncie\InvoncieType.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InvoncieType.Designer.cs">
+    <Compile Include="Invoncie\InvoncieType.Designer.cs">
       <DependentUpon>InvoncieType.cs</DependentUpon>
     </Compile>
     <Compile Include="Invoncie\NewInvoncieCreate.cs">
@@ -107,7 +107,7 @@
     <Compile Include="NilveraApi\General\GlobalCompanySearch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ArchiveType.resx">
+    <EmbeddedResource Include="Invoncie\ArchiveType.resx">
       <DependentUpon>ArchiveType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deneme.resx">
@@ -119,7 +119,7 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InvoncieType.resx">
+    <EmbeddedResource Include="Invoncie\InvoncieType.resx">
       <DependentUpon>InvoncieType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoncie\NewInvoncieCreate.resx">

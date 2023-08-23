@@ -47,6 +47,9 @@ namespace DemoInvoncie
             //Fatura Türü
             InvoriceType();
 
+            //Fatura Senaryosu
+            InvoriceScenario();
+
 
         } 
         private async System.Threading.Tasks.Task Series()
@@ -126,6 +129,16 @@ namespace DemoInvoncie
             gridLookUpEdit6.Properties.DisplayMember = "FaturaTuru";
             gridLookUpEdit6.Properties.DataSource = dataTable;
             gridLookUpEdit6.Properties.View.FocusedRowHandle = 0;
-        } 
+        }
+        private void InvoriceScenario()
+        {
+            DataTable dataTable = new DataTable();
+            dataTable.Columns.Add("FaturaSenaryosu", typeof(string));
+            dataTable.Rows.Add("E-Arşiv Fatura"); 
+            gridLookUpEdit7.Properties.ValueMember = "FaturaTuru";
+            gridLookUpEdit7.Properties.DisplayMember = "FaturaTuru";
+            gridLookUpEdit7.Properties.DataSource = dataTable;
+            gridLookUpEdit7.Properties.View.FocusedRowHandle = 0;
+        }
     }
 }

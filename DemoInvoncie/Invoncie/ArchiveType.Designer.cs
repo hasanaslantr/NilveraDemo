@@ -351,7 +351,9 @@
             this.checkEditIrsaliye.Location = new System.Drawing.Point(6, 230);
             this.checkEditIrsaliye.Name = "checkEditIrsaliye";
             this.checkEditIrsaliye.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkEditIrsaliye.Properties.Appearance.ForeColor = System.Drawing.Color.Teal;
             this.checkEditIrsaliye.Properties.Appearance.Options.UseFont = true;
+            this.checkEditIrsaliye.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditIrsaliye.Properties.Caption = "İrsaliye Bilgileri";
             this.checkEditIrsaliye.Size = new System.Drawing.Size(110, 21);
             this.checkEditIrsaliye.TabIndex = 18;
