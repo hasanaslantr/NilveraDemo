@@ -32,6 +32,8 @@
             this.gridControlEInvocie = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.MenuStripAppearanceSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContextMenuXmlConverting = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStripAppreanceInvoncie = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -52,8 +54,9 @@
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ItemCheckEditInvocie = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelUst = new DevExpress.XtraEditors.PanelControl();
-            this.BtnInvocieSend = new DevExpress.XtraEditors.SimpleButton();
             this.panelAna = new DevExpress.XtraEditors.PanelControl();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEInvocie)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -62,6 +65,10 @@
             this.panelUst.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelAna)).BeginInit();
             this.panelAna.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlEInvocie
@@ -81,9 +88,11 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuStripAppearanceSave});
+            this.MenuStripAppearanceSave,
+            this.ContextMenuXmlConverting,
+            this.MenuStripAppreanceInvoncie});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(172, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(172, 70);
             // 
             // MenuStripAppearanceSave
             // 
@@ -91,6 +100,20 @@
             this.MenuStripAppearanceSave.Size = new System.Drawing.Size(171, 22);
             this.MenuStripAppearanceSave.Text = "Görünümü Kaydet";
             this.MenuStripAppearanceSave.Click += new System.EventHandler(this.MenuStripAppearanceSave_Click);
+            // 
+            // ContextMenuXmlConverting
+            // 
+            this.ContextMenuXmlConverting.Name = "ContextMenuXmlConverting";
+            this.ContextMenuXmlConverting.Size = new System.Drawing.Size(171, 22);
+            this.ContextMenuXmlConverting.Text = "Xml Kaydet";
+            this.ContextMenuXmlConverting.Click += new System.EventHandler(this.ContextMenuXmlConverting_Click);
+            // 
+            // MenuStripAppreanceInvoncie
+            // 
+            this.MenuStripAppreanceInvoncie.Name = "MenuStripAppreanceInvoncie";
+            this.MenuStripAppreanceInvoncie.Size = new System.Drawing.Size(171, 22);
+            this.MenuStripAppreanceInvoncie.Text = "Görüntüle";
+            this.MenuStripAppreanceInvoncie.Click += new System.EventHandler(this.MenuStripAppreanceInvoncie_Click);
             // 
             // gridView1
             // 
@@ -282,23 +305,13 @@
             // 
             // panelUst
             // 
-            this.panelUst.Controls.Add(this.BtnInvocieSend);
+            this.panelUst.Controls.Add(this.dateEdit2);
+            this.panelUst.Controls.Add(this.dateEdit1);
             this.panelUst.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUst.Location = new System.Drawing.Point(0, 0);
             this.panelUst.Name = "panelUst";
             this.panelUst.Size = new System.Drawing.Size(800, 33);
             this.panelUst.TabIndex = 1;
-            // 
-            // BtnInvocieSend
-            // 
-            this.BtnInvocieSend.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnInvocieSend.Appearance.Options.UseFont = true;
-            this.BtnInvocieSend.Location = new System.Drawing.Point(5, 4);
-            this.BtnInvocieSend.Name = "BtnInvocieSend";
-            this.BtnInvocieSend.Size = new System.Drawing.Size(75, 23);
-            this.BtnInvocieSend.TabIndex = 0;
-            this.BtnInvocieSend.Text = "Gönder";
-            this.BtnInvocieSend.Click += new System.EventHandler(this.BtnInvocieSend_Click);
             // 
             // panelAna
             // 
@@ -308,6 +321,30 @@
             this.panelAna.Name = "panelAna";
             this.panelAna.Size = new System.Drawing.Size(800, 417);
             this.panelAna.TabIndex = 2;
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(12, 5);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(87, 20);
+            this.dateEdit1.TabIndex = 0;
+            // 
+            // dateEdit2
+            // 
+            this.dateEdit2.EditValue = null;
+            this.dateEdit2.Location = new System.Drawing.Point(115, 5);
+            this.dateEdit2.Name = "dateEdit2";
+            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit2.Size = new System.Drawing.Size(87, 20);
+            this.dateEdit2.TabIndex = 1;
             // 
             // EInvoice
             // 
@@ -328,6 +365,10 @@
             this.panelUst.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelAna)).EndInit();
             this.panelAna.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,6 +399,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit ItemCheckEditInvocie;
-        private DevExpress.XtraEditors.SimpleButton BtnInvocieSend;
+        private System.Windows.Forms.ToolStripMenuItem ContextMenuXmlConverting;
+        private System.Windows.Forms.ToolStripMenuItem MenuStripAppreanceInvoncie;
+        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit dateEdit2;
     }
 }

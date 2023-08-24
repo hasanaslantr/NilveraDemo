@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.gridLookUpEdit5 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.txtExchangeRate = new DevExpress.XtraEditors.TextEdit();
+            this.gridLookUpEditCurrencyCode = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridLookUpEdit4 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEditSendType = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridLookUpEdit3 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEditSalesPlatform = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridLookUpEdit2 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEditInvoIceTemplate = new DevExpress.XtraEditors.GridLookUpEdit();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.gridLookUpEdit1 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEditInvoiceSeries = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.dateEditInvoice = new DevExpress.XtraEditors.DateEdit();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.gridLookUpEdit6 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEditInvoiceType = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.gridLookUpEdit7 = new DevExpress.XtraEditors.GridLookUpEdit();
@@ -57,28 +57,28 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExchangeRate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditCurrencyCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditSendType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditSalesPlatform.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditInvoIceTemplate.Properties)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditInvoiceSeries.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditInvoice.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditInvoice.Properties)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditInvoiceType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit7.Properties)).BeginInit();
@@ -90,26 +90,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // textEdit1
+            // txtExchangeRate
             // 
-            this.textEdit1.Location = new System.Drawing.Point(6, 19);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(187, 24);
-            this.textEdit1.TabIndex = 0;
+            this.txtExchangeRate.EditValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtExchangeRate.Location = new System.Drawing.Point(6, 19);
+            this.txtExchangeRate.Name = "txtExchangeRate";
+            this.txtExchangeRate.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtExchangeRate.Properties.Appearance.Options.UseFont = true;
+            this.txtExchangeRate.Size = new System.Drawing.Size(187, 24);
+            this.txtExchangeRate.TabIndex = 0;
             // 
-            // gridLookUpEdit5
+            // gridLookUpEditCurrencyCode
             // 
-            this.gridLookUpEdit5.Location = new System.Drawing.Point(4, 16);
-            this.gridLookUpEdit5.Name = "gridLookUpEdit5";
-            this.gridLookUpEdit5.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridLookUpEdit5.Properties.Appearance.Options.UseFont = true;
-            this.gridLookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.gridLookUpEditCurrencyCode.Location = new System.Drawing.Point(4, 16);
+            this.gridLookUpEditCurrencyCode.Name = "gridLookUpEditCurrencyCode";
+            this.gridLookUpEditCurrencyCode.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridLookUpEditCurrencyCode.Properties.Appearance.Options.UseFont = true;
+            this.gridLookUpEditCurrencyCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gridLookUpEdit5.Properties.PopupView = this.gridView4;
-            this.gridLookUpEdit5.Size = new System.Drawing.Size(189, 24);
-            this.gridLookUpEdit5.TabIndex = 4;
+            this.gridLookUpEditCurrencyCode.Properties.PopupView = this.gridView4;
+            this.gridLookUpEditCurrencyCode.Size = new System.Drawing.Size(189, 24);
+            this.gridLookUpEditCurrencyCode.TabIndex = 4;
             // 
             // gridView4
             // 
@@ -125,17 +130,17 @@
             this.gridView3.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView3.OptionsView.ShowGroupPanel = false;
             // 
-            // gridLookUpEdit4
+            // gridLookUpEditSendType
             // 
-            this.gridLookUpEdit4.Location = new System.Drawing.Point(4, 18);
-            this.gridLookUpEdit4.Name = "gridLookUpEdit4";
-            this.gridLookUpEdit4.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridLookUpEdit4.Properties.Appearance.Options.UseFont = true;
-            this.gridLookUpEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.gridLookUpEditSendType.Location = new System.Drawing.Point(4, 18);
+            this.gridLookUpEditSendType.Name = "gridLookUpEditSendType";
+            this.gridLookUpEditSendType.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridLookUpEditSendType.Properties.Appearance.Options.UseFont = true;
+            this.gridLookUpEditSendType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gridLookUpEdit4.Properties.PopupView = this.gridView3;
-            this.gridLookUpEdit4.Size = new System.Drawing.Size(189, 24);
-            this.gridLookUpEdit4.TabIndex = 4;
+            this.gridLookUpEditSendType.Properties.PopupView = this.gridView3;
+            this.gridLookUpEditSendType.Size = new System.Drawing.Size(189, 24);
+            this.gridLookUpEditSendType.TabIndex = 4;
             // 
             // gridView2
             // 
@@ -144,17 +149,17 @@
             this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // gridLookUpEdit3
+            // gridLookUpEditSalesPlatform
             // 
-            this.gridLookUpEdit3.Location = new System.Drawing.Point(4, 19);
-            this.gridLookUpEdit3.Name = "gridLookUpEdit3";
-            this.gridLookUpEdit3.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridLookUpEdit3.Properties.Appearance.Options.UseFont = true;
-            this.gridLookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.gridLookUpEditSalesPlatform.Location = new System.Drawing.Point(4, 19);
+            this.gridLookUpEditSalesPlatform.Name = "gridLookUpEditSalesPlatform";
+            this.gridLookUpEditSalesPlatform.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridLookUpEditSalesPlatform.Properties.Appearance.Options.UseFont = true;
+            this.gridLookUpEditSalesPlatform.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gridLookUpEdit3.Properties.PopupView = this.gridView2;
-            this.gridLookUpEdit3.Size = new System.Drawing.Size(190, 24);
-            this.gridLookUpEdit3.TabIndex = 5;
+            this.gridLookUpEditSalesPlatform.Properties.PopupView = this.gridView2;
+            this.gridLookUpEditSalesPlatform.Size = new System.Drawing.Size(190, 24);
+            this.gridLookUpEditSalesPlatform.TabIndex = 5;
             // 
             // gridView1
             // 
@@ -163,21 +168,21 @@
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // gridLookUpEdit2
+            // gridLookUpEditInvoIceTemplate
             // 
-            this.gridLookUpEdit2.Location = new System.Drawing.Point(4, 19);
-            this.gridLookUpEdit2.Name = "gridLookUpEdit2";
-            this.gridLookUpEdit2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridLookUpEdit2.Properties.Appearance.Options.UseFont = true;
-            this.gridLookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.gridLookUpEditInvoIceTemplate.Location = new System.Drawing.Point(4, 19);
+            this.gridLookUpEditInvoIceTemplate.Name = "gridLookUpEditInvoIceTemplate";
+            this.gridLookUpEditInvoIceTemplate.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridLookUpEditInvoIceTemplate.Properties.Appearance.Options.UseFont = true;
+            this.gridLookUpEditInvoIceTemplate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gridLookUpEdit2.Properties.PopupView = this.gridView1;
-            this.gridLookUpEdit2.Size = new System.Drawing.Size(127, 24);
-            this.gridLookUpEdit2.TabIndex = 5;
+            this.gridLookUpEditInvoIceTemplate.Properties.PopupView = this.gridView1;
+            this.gridLookUpEditInvoIceTemplate.Size = new System.Drawing.Size(127, 24);
+            this.gridLookUpEditInvoIceTemplate.TabIndex = 5;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textEdit1);
+            this.groupBox7.Controls.Add(this.txtExchangeRate);
             this.groupBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox7.Location = new System.Drawing.Point(217, 178);
             this.groupBox7.Name = "groupBox7";
@@ -186,18 +191,18 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Döviz Kuru";
             // 
-            // gridLookUpEdit1
+            // gridLookUpEditInvoiceSeries
             // 
-            this.gridLookUpEdit1.EditValue = "";
-            this.gridLookUpEdit1.Location = new System.Drawing.Point(4, 19);
-            this.gridLookUpEdit1.Name = "gridLookUpEdit1";
-            this.gridLookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridLookUpEdit1.Properties.Appearance.Options.UseFont = true;
-            this.gridLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.gridLookUpEditInvoiceSeries.EditValue = "";
+            this.gridLookUpEditInvoiceSeries.Location = new System.Drawing.Point(4, 19);
+            this.gridLookUpEditInvoiceSeries.Name = "gridLookUpEditInvoiceSeries";
+            this.gridLookUpEditInvoiceSeries.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridLookUpEditInvoiceSeries.Properties.Appearance.Options.UseFont = true;
+            this.gridLookUpEditInvoiceSeries.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gridLookUpEdit1.Properties.PopupView = this.gridLookUpEdit1View;
-            this.gridLookUpEdit1.Size = new System.Drawing.Size(136, 24);
-            this.gridLookUpEdit1.TabIndex = 4;
+            this.gridLookUpEditInvoiceSeries.Properties.PopupView = this.gridLookUpEdit1View;
+            this.gridLookUpEditInvoiceSeries.Size = new System.Drawing.Size(136, 24);
+            this.gridLookUpEditInvoiceSeries.TabIndex = 4;
             // 
             // gridLookUpEdit1View
             // 
@@ -208,7 +213,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.gridLookUpEdit1);
+            this.groupBox2.Controls.Add(this.gridLookUpEditInvoiceSeries);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.Location = new System.Drawing.Point(128, 5);
             this.groupBox2.Name = "groupBox2";
@@ -219,7 +224,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateEdit1);
+            this.groupBox1.Controls.Add(this.dateEditInvoice);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(6, 5);
             this.groupBox1.Name = "groupBox1";
@@ -228,23 +233,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fatura Tarihi";
             // 
-            // dateEdit1
+            // dateEditInvoice
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(6, 19);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditInvoice.EditValue = null;
+            this.dateEditInvoice.Location = new System.Drawing.Point(6, 19);
+            this.dateEditInvoice.Name = "dateEditInvoice";
+            this.dateEditInvoice.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateEditInvoice.Properties.Appearance.Options.UseFont = true;
+            this.dateEditInvoice.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditInvoice.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(104, 24);
-            this.dateEdit1.TabIndex = 0;
+            this.dateEditInvoice.Size = new System.Drawing.Size(104, 24);
+            this.dateEditInvoice.TabIndex = 0;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.gridLookUpEdit5);
+            this.groupBox6.Controls.Add(this.gridLookUpEditCurrencyCode);
             this.groupBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox6.Location = new System.Drawing.Point(7, 178);
             this.groupBox6.Name = "groupBox6";
@@ -255,7 +260,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.gridLookUpEdit3);
+            this.groupBox4.Controls.Add(this.gridLookUpEditSalesPlatform);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(217, 57);
             this.groupBox4.Name = "groupBox4";
@@ -266,7 +271,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.gridLookUpEdit4);
+            this.groupBox5.Controls.Add(this.gridLookUpEditSendType);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.Location = new System.Drawing.Point(7, 57);
             this.groupBox5.Name = "groupBox5";
@@ -277,7 +282,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.gridLookUpEdit2);
+            this.groupBox3.Controls.Add(this.gridLookUpEditInvoIceTemplate);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(280, 5);
             this.groupBox3.Name = "groupBox3";
@@ -288,7 +293,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.gridLookUpEdit6);
+            this.groupBox8.Controls.Add(this.gridLookUpEditInvoiceType);
             this.groupBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox8.Location = new System.Drawing.Point(217, 119);
             this.groupBox8.Name = "groupBox8";
@@ -297,17 +302,17 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Fatura Tipi";
             // 
-            // gridLookUpEdit6
+            // gridLookUpEditInvoiceType
             // 
-            this.gridLookUpEdit6.Location = new System.Drawing.Point(4, 19);
-            this.gridLookUpEdit6.Name = "gridLookUpEdit6";
-            this.gridLookUpEdit6.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridLookUpEdit6.Properties.Appearance.Options.UseFont = true;
-            this.gridLookUpEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.gridLookUpEditInvoiceType.Location = new System.Drawing.Point(4, 19);
+            this.gridLookUpEditInvoiceType.Name = "gridLookUpEditInvoiceType";
+            this.gridLookUpEditInvoiceType.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridLookUpEditInvoiceType.Properties.Appearance.Options.UseFont = true;
+            this.gridLookUpEditInvoiceType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gridLookUpEdit6.Properties.PopupView = this.gridView5;
-            this.gridLookUpEdit6.Size = new System.Drawing.Size(190, 24);
-            this.gridLookUpEdit6.TabIndex = 5;
+            this.gridLookUpEditInvoiceType.Properties.PopupView = this.gridView5;
+            this.gridLookUpEditInvoiceType.Size = new System.Drawing.Size(190, 24);
+            this.gridLookUpEditInvoiceType.TabIndex = 5;
             // 
             // gridView5
             // 
@@ -406,28 +411,28 @@
             this.Name = "ArchiveType";
             this.Size = new System.Drawing.Size(423, 329);
             this.Load += new System.EventHandler(this.ArchiveType_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExchangeRate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditCurrencyCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditSendType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditSalesPlatform.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditInvoIceTemplate.Properties)).EndInit();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditInvoiceSeries.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditInvoice.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditInvoice.Properties)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEditInvoiceType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit7.Properties)).EndInit();
@@ -442,35 +447,34 @@
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit5;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit4;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit2;
         private System.Windows.Forms.GroupBox groupBox7;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox8;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit6;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
         private System.Windows.Forms.GroupBox groupBox9;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit7;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
         private DevExpress.XtraEditors.CheckEdit checkEditIrsaliye;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        public DevExpress.XtraEditors.TextEdit txtExchangeRate;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEditCurrencyCode;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEditSendType;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEditSalesPlatform;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEditInvoIceTemplate;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEditInvoiceSeries;
+        public DevExpress.XtraEditors.DateEdit dateEditInvoice;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEditInvoiceType;
+        public DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit7;
+        public DevExpress.XtraEditors.TextEdit textEdit3;
+        public DevExpress.XtraEditors.TextEdit textEdit2;
     }
 }

@@ -13,7 +13,7 @@ namespace DemoInvoncie.DevexpressConfigurations
             // Dosyayı kontrol edelim, yoksa oluşturalım
             try
             {
-                string fileName = @"Appearance\" + formName + "_" + grid.Text + ".xml";
+                string fileName = @"Appearance\" + formName + "_" + grid.Name + ".xml";
                 if (!File.Exists(fileName))
                 {
                     using (FileStream fs = File.Create(fileName)) { }
@@ -33,8 +33,8 @@ namespace DemoInvoncie.DevexpressConfigurations
         {
             try
             {
-                string fileName = @"Appearance\" + formName + "_" + grid.MainView.Name + ".xml";
-                grid.MainView.SaveLayoutToXml(fileName);
+                string fileName = @"Appearance\" + formName + "_" + grid.Name + ".xml";
+                grid.MainView.RestoreLayoutFromXml(fileName);
             }
             catch (Exception) { }
         }

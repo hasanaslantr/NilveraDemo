@@ -89,7 +89,7 @@
             this.panelAlt = new DevExpress.XtraEditors.PanelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnPost = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -162,7 +162,7 @@
             this.xtraTabPage1.Controls.Add(this.groupControl2);
             this.xtraTabPage1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage1.ImageOptions.SvgImage")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(927, 328);
+            this.xtraTabPage1.Size = new System.Drawing.Size(927, 330);
             this.xtraTabPage1.Text = "Alıcı ve Genel Bilgiler";
             // 
             // groupControl3
@@ -199,7 +199,7 @@
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(492, 328);
+            this.groupControl3.Size = new System.Drawing.Size(492, 330);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Mükellef Bilgileri";
             // 
@@ -524,7 +524,7 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupControl2.Location = new System.Drawing.Point(492, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(435, 328);
+            this.groupControl2.Size = new System.Drawing.Size(435, 330);
             this.groupControl2.TabIndex = 28;
             this.groupControl2.Text = "Genel Bilgiler";
             // 
@@ -534,7 +534,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 23);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(431, 303);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(431, 305);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // xtraTabPage2
@@ -543,7 +543,7 @@
             this.xtraTabPage2.Controls.Add(this.panelControlMalHizmetUst);
             this.xtraTabPage2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage2.ImageOptions.SvgImage")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(927, 328);
+            this.xtraTabPage2.Size = new System.Drawing.Size(927, 330);
             this.xtraTabPage2.Text = "Mal/Hizmet Bilgileri";
             // 
             // panelControlMalHizmetOrta
@@ -552,7 +552,7 @@
             this.panelControlMalHizmetOrta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControlMalHizmetOrta.Location = new System.Drawing.Point(0, 59);
             this.panelControlMalHizmetOrta.Name = "panelControlMalHizmetOrta";
-            this.panelControlMalHizmetOrta.Size = new System.Drawing.Size(927, 269);
+            this.panelControlMalHizmetOrta.Size = new System.Drawing.Size(927, 271);
             this.panelControlMalHizmetOrta.TabIndex = 4;
             // 
             // groupControl4
@@ -561,7 +561,7 @@
             this.groupControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl4.Location = new System.Drawing.Point(2, 2);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(923, 265);
+            this.groupControl4.Size = new System.Drawing.Size(923, 267);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Mal/Hizmet Bilgileri";
             // 
@@ -572,7 +572,7 @@
             this.gridControlSales.Location = new System.Drawing.Point(2, 23);
             this.gridControlSales.MainView = this.gridView1;
             this.gridControlSales.Name = "gridControlSales";
-            this.gridControlSales.Size = new System.Drawing.Size(919, 240);
+            this.gridControlSales.Size = new System.Drawing.Size(919, 242);
             this.gridControlSales.TabIndex = 0;
             this.gridControlSales.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -757,7 +757,7 @@
             this.xtraTabPage3.Controls.Add(this.xtraTabControl2);
             this.xtraTabPage3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage3.ImageOptions.SvgImage")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(927, 328);
+            this.xtraTabPage3.Size = new System.Drawing.Size(927, 330);
             this.xtraTabPage3.Text = "Fatura Ek Detaylar";
             // 
             // xtraTabControl2
@@ -766,7 +766,7 @@
             this.xtraTabControl2.Location = new System.Drawing.Point(0, 0);
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
-            this.xtraTabControl2.Size = new System.Drawing.Size(927, 328);
+            this.xtraTabControl2.Size = new System.Drawing.Size(927, 330);
             this.xtraTabControl2.TabIndex = 0;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage4,
@@ -780,7 +780,7 @@
             this.xtraTabPage4.Controls.Add(this.richTextBox1);
             this.xtraTabPage4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage4.ImageOptions.SvgImage")));
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(925, 284);
+            this.xtraTabPage4.Size = new System.Drawing.Size(925, 288);
             this.xtraTabPage4.Text = "Fatura Notu";
             // 
             // richTextBox1
@@ -788,7 +788,7 @@
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(925, 284);
+            this.richTextBox1.Size = new System.Drawing.Size(925, 288);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -796,28 +796,28 @@
             // 
             this.xtraTabPage5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage5.ImageOptions.SvgImage")));
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(925, 284);
+            this.xtraTabPage5.Size = new System.Drawing.Size(925, 288);
             this.xtraTabPage5.Text = "Sipariş Bilgileri";
             // 
             // xtraTabPage6
             // 
             this.xtraTabPage6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage6.ImageOptions.SvgImage")));
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(925, 284);
+            this.xtraTabPage6.Size = new System.Drawing.Size(925, 288);
             this.xtraTabPage6.Text = "Ödeme Detayları";
             // 
             // xtraTabPage7
             // 
             this.xtraTabPage7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage7.ImageOptions.SvgImage")));
             this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(925, 284);
+            this.xtraTabPage7.Size = new System.Drawing.Size(925, 288);
             this.xtraTabPage7.Text = "Fatura Ek Dosyalar";
             // 
             // xtraTabPage8
             // 
             this.xtraTabPage8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage8.ImageOptions.SvgImage")));
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(925, 284);
+            this.xtraTabPage8.Size = new System.Drawing.Size(925, 288);
             this.xtraTabPage8.Text = "Kodlar";
             // 
             // panelOrta
@@ -851,7 +851,7 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.simpleButton6);
-            this.groupControl1.Controls.Add(this.simpleButton5);
+            this.groupControl1.Controls.Add(this.BtnPost);
             this.groupControl1.Controls.Add(this.simpleButton4);
             this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.simpleButton1);
@@ -867,29 +867,30 @@
             this.simpleButton6.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton6.Appearance.Options.UseFont = true;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(883, 26);
+            this.simpleButton6.Location = new System.Drawing.Point(812, 29);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(114, 23);
             this.simpleButton6.TabIndex = 42;
             this.simpleButton6.Text = "Vazgeç";
             // 
-            // simpleButton5
+            // BtnPost
             // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.Location = new System.Drawing.Point(724, 26);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(153, 23);
-            this.simpleButton5.TabIndex = 43;
-            this.simpleButton5.Text = "Onayla ve Gönder";
+            this.BtnPost.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnPost.Appearance.Options.UseFont = true;
+            this.BtnPost.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.BtnPost.Location = new System.Drawing.Point(653, 29);
+            this.BtnPost.Name = "BtnPost";
+            this.BtnPost.Size = new System.Drawing.Size(153, 23);
+            this.BtnPost.TabIndex = 43;
+            this.BtnPost.Text = "Onayla ve Gönder";
+            this.BtnPost.Click += new System.EventHandler(this.BtnPost_Click);
             // 
             // simpleButton4
             // 
             this.simpleButton4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(560, 27);
+            this.simpleButton4.Location = new System.Drawing.Point(489, 30);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(158, 23);
             this.simpleButton4.TabIndex = 44;
@@ -900,7 +901,7 @@
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(465, 27);
+            this.simpleButton2.Location = new System.Drawing.Point(394, 30);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(89, 23);
             this.simpleButton2.TabIndex = 45;
@@ -911,7 +912,7 @@
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(364, 27);
+            this.simpleButton1.Location = new System.Drawing.Point(293, 30);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(95, 23);
             this.simpleButton1.TabIndex = 46;
@@ -1109,7 +1110,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton BtnPost;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;

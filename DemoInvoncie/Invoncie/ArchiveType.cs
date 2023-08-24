@@ -28,7 +28,7 @@ namespace DemoInvoncie
         }  
         private async void ArchiveType_Load(object sender, EventArgs e)
         {
-            dateEdit1.EditValue = DateTime.Now;
+            dateEditInvoice.EditValue = DateTime.Now;
 
 
             // Fatura serileri
@@ -62,9 +62,9 @@ namespace DemoInvoncie
                 dataTable.Rows.Add(  series.Name);
             }
           //  gridLookUpEdit1.Properties.ValueMember = "ID";
-            gridLookUpEdit1.Properties.DisplayMember = "Name";
-            gridLookUpEdit1.Properties.DataSource = dataTable;
-            gridLookUpEdit1.Properties.View.FocusedRowHandle = 0;
+            gridLookUpEditInvoiceSeries.Properties.DisplayMember = "Name";
+            gridLookUpEditInvoiceSeries.Properties.DataSource = dataTable;
+            gridLookUpEditInvoiceSeries.Properties.View.FocusedRowHandle = 0;
         } 
         private async System.Threading.Tasks.Task Template()
         {
@@ -76,9 +76,9 @@ namespace DemoInvoncie
                 dataTable.Rows.Add(  template.Name);
             }
           //  gridLookUpEdit2.Properties.ValueMember = "ID";
-            gridLookUpEdit2.Properties.DisplayMember = "Name";
-            gridLookUpEdit2.Properties.DataSource = dataTable;
-            gridLookUpEdit2.Properties.View.FocusedRowHandle = 0;
+            gridLookUpEditInvoIceTemplate.Properties.DisplayMember = "Name";
+            gridLookUpEditInvoIceTemplate.Properties.DataSource = dataTable;
+            gridLookUpEditInvoIceTemplate.Properties.View.FocusedRowHandle = 0;
         } 
         private void Ileti()
         {
@@ -86,10 +86,10 @@ namespace DemoInvoncie
             dataTable.Columns.Add("İleti", typeof(string));
             dataTable.Rows.Add("Elektronik");
             dataTable.Rows.Add("Kağıt"); 
-            gridLookUpEdit4.Properties.ValueMember = "İleti";
-            gridLookUpEdit4.Properties.DisplayMember = "İleti";
-            gridLookUpEdit4.Properties.DataSource = dataTable;
-            gridLookUpEdit4.Properties.View.FocusedRowHandle = 0;
+            gridLookUpEditSendType.Properties.ValueMember = "İleti";
+            gridLookUpEditSendType.Properties.DisplayMember = "İleti";
+            gridLookUpEditSendType.Properties.DataSource = dataTable;
+            gridLookUpEditSendType.Properties.View.FocusedRowHandle = 0;
         } 
         private void Saleschannel()
         {
@@ -97,10 +97,10 @@ namespace DemoInvoncie
             dataTable.Columns.Add("SatışKanali", typeof(string));
             dataTable.Rows.Add("Normal Satış");
             dataTable.Rows.Add("İnternet Satışı"); 
-            gridLookUpEdit3.Properties.ValueMember = "SatışKanali";
-            gridLookUpEdit3.Properties.DisplayMember = "SatışKanali";
-            gridLookUpEdit3.Properties.DataSource = dataTable;
-            gridLookUpEdit3.Properties.View.FocusedRowHandle = 0;
+            gridLookUpEditSalesPlatform.Properties.ValueMember = "SatışKanali";
+            gridLookUpEditSalesPlatform.Properties.DisplayMember = "SatışKanali";
+            gridLookUpEditSalesPlatform.Properties.DataSource = dataTable;
+            gridLookUpEditSalesPlatform.Properties.View.FocusedRowHandle = 0;
         }
         private void Currency()
         {
@@ -109,10 +109,10 @@ namespace DemoInvoncie
             dataTable.Rows.Add("Türk Lirası");
             dataTable.Rows.Add("Amarikan Doları");
             dataTable.Rows.Add("Euro");
-            gridLookUpEdit5.Properties.ValueMember = "Doviz";
-            gridLookUpEdit5.Properties.DisplayMember = "Doviz";
-            gridLookUpEdit5.Properties.DataSource = dataTable;
-            gridLookUpEdit5.Properties.View.FocusedRowHandle = 0;
+            gridLookUpEditCurrencyCode.Properties.ValueMember = "Doviz";
+            gridLookUpEditCurrencyCode.Properties.DisplayMember = "Doviz";
+            gridLookUpEditCurrencyCode.Properties.DataSource = dataTable;
+            gridLookUpEditCurrencyCode.Properties.View.FocusedRowHandle = 0;
 
         } 
         private void InvoriceType()
@@ -125,10 +125,10 @@ namespace DemoInvoncie
             dataTable.Rows.Add("Tevkifat iade");
             dataTable.Rows.Add("Vergi istisna");
             dataTable.Rows.Add("İhracat kayıtlı");
-            gridLookUpEdit6.Properties.ValueMember = "FaturaTuru";
-            gridLookUpEdit6.Properties.DisplayMember = "FaturaTuru";
-            gridLookUpEdit6.Properties.DataSource = dataTable;
-            gridLookUpEdit6.Properties.View.FocusedRowHandle = 0;
+            gridLookUpEditInvoiceType.Properties.ValueMember = "FaturaTuru";
+            gridLookUpEditInvoiceType.Properties.DisplayMember = "FaturaTuru";
+            gridLookUpEditInvoiceType.Properties.DataSource = dataTable;
+            gridLookUpEditInvoiceType.Properties.View.FocusedRowHandle = 0;
         }
         private void InvoriceScenario()
         {

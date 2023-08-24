@@ -18,16 +18,13 @@ namespace DemoInvoncie.NilveraApi.Invoncie
                 using (HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_authorization.ApiKey}");
-
-                    HttpResponseMessage response = await client.GetAsync("https://apitest.nilvera.com/einvoice/Draft?PageSize=30&Page=1");
+                                        HttpResponseMessage response = await client.GetAsync("https://apitest.nilvera.com/einvoice/Draft?PageSize=30&Page=1");
 
                     if (response.IsSuccessStatusCode)
                     {
-                        string jsonData = await response.Content.ReadAsStringAsync();
-
-                        var apiResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<ApiResponse>(jsonData);
+                        string jsonData = await response.Content.ReadAsStringAsync(); 
+                        var apiResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<Invoice>(jsonData);
                         var invoicesData = apiResponse.Content;
-
                         return invoicesData;
                     }
                     else
@@ -42,12 +39,7 @@ namespace DemoInvoncie.NilveraApi.Invoncie
                 var error = ex.Message;
                 return null;
             }
-        }
-
-        public class ApiResponse
-        {
-            public List<Invoice> Content { get; set; }
-        }
+        } 
     }
 
 }

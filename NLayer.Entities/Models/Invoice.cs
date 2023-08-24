@@ -26,6 +26,7 @@ namespace NLayer.Entities.Models
         public string ReceiverTaxNumber { get; set; }
         public string ReceiverAlias { get; set; }
         public bool IsPrint { get; set; }
+        public List<Invoice> Content { get; set; }
     }
 
 }

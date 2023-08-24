@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Invoice>
+    <UUID>9ac90636-858e-4f95-aeeb-d20376d3c2fe</UUID>
+    <TaxNumber>1234567801</TaxNumber>
+    <InvoiceNumber>ABC</InvoiceNumber>
+    <InvoiceProfile>TICARIFATURA</InvoiceProfile>
+    <InvoiceType>SATIS</InvoiceType>
+    <IssueDate>2023-08-03T13:56:33</IssueDate>
+    <CreatedDate>2023-08-03T14:14:42.87</CreatedDate>
+    <CurrencyCode>TRY</CurrencyCode>
+    <PayableAmount>2227.84</PayableAmount>
+    <Alias>urn:mail:defaultgb@nilvera.com</Alias>
+    <ReceiverName>OĞUZHAN KETEN</ReceiverName>
+    <ReceiverTaxNumber>41104641584</ReceiverTaxNumber>
+    <ReceiverAlias>urn:mail:defaultpk@oguzhanketen.com</ReceiverAlias>
+    <IsPrint>false</IsPrint>
+  </Invoice>
+</ArrayOfInvoice>
