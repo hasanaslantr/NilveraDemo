@@ -34,6 +34,7 @@
             this.MenuStripAppearanceSave = new System.Windows.Forms.ToolStripMenuItem();
             this.ContextMenuXmlConverting = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStripAppreanceInvoncie = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStripXmlConvertHtmlView = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -53,22 +54,31 @@
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ItemCheckEditInvocie = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.panelUst = new DevExpress.XtraEditors.PanelControl();
             this.panelAna = new DevExpress.XtraEditors.PanelControl();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtPageSize = new DevExpress.XtraEditors.TextEdit();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtSearch = new DevExpress.XtraEditors.TextEdit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtPage = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEInvocie)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemCheckEditInvocie)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelUst)).BeginInit();
-            this.panelUst.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelAna)).BeginInit();
             this.panelAna.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPageSize.Properties)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPage.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlEInvocie
@@ -80,7 +90,7 @@
             this.gridControlEInvocie.Name = "gridControlEInvocie";
             this.gridControlEInvocie.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.ItemCheckEditInvocie});
-            this.gridControlEInvocie.Size = new System.Drawing.Size(796, 413);
+            this.gridControlEInvocie.Size = new System.Drawing.Size(792, 394);
             this.gridControlEInvocie.TabIndex = 0;
             this.gridControlEInvocie.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -90,30 +100,38 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuStripAppearanceSave,
             this.ContextMenuXmlConverting,
-            this.MenuStripAppreanceInvoncie});
+            this.MenuStripAppreanceInvoncie,
+            this.MenuStripXmlConvertHtmlView});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(172, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(202, 92);
             // 
             // MenuStripAppearanceSave
             // 
             this.MenuStripAppearanceSave.Name = "MenuStripAppearanceSave";
-            this.MenuStripAppearanceSave.Size = new System.Drawing.Size(171, 22);
+            this.MenuStripAppearanceSave.Size = new System.Drawing.Size(201, 22);
             this.MenuStripAppearanceSave.Text = "Görünümü Kaydet";
             this.MenuStripAppearanceSave.Click += new System.EventHandler(this.MenuStripAppearanceSave_Click);
             // 
             // ContextMenuXmlConverting
             // 
             this.ContextMenuXmlConverting.Name = "ContextMenuXmlConverting";
-            this.ContextMenuXmlConverting.Size = new System.Drawing.Size(171, 22);
+            this.ContextMenuXmlConverting.Size = new System.Drawing.Size(201, 22);
             this.ContextMenuXmlConverting.Text = "Xml Kaydet";
             this.ContextMenuXmlConverting.Click += new System.EventHandler(this.ContextMenuXmlConverting_Click);
             // 
             // MenuStripAppreanceInvoncie
             // 
             this.MenuStripAppreanceInvoncie.Name = "MenuStripAppreanceInvoncie";
-            this.MenuStripAppreanceInvoncie.Size = new System.Drawing.Size(171, 22);
+            this.MenuStripAppreanceInvoncie.Size = new System.Drawing.Size(201, 22);
             this.MenuStripAppreanceInvoncie.Text = "Görüntüle";
             this.MenuStripAppreanceInvoncie.Click += new System.EventHandler(this.MenuStripAppreanceInvoncie_Click);
+            // 
+            // MenuStripXmlConvertHtmlView
+            // 
+            this.MenuStripXmlConvertHtmlView.Name = "MenuStripXmlConvertHtmlView";
+            this.MenuStripXmlConvertHtmlView.Size = new System.Drawing.Size(201, 22);
+            this.MenuStripXmlConvertHtmlView.Text = "Xmlden Html Görüntüle";
+            this.MenuStripXmlConvertHtmlView.Click += new System.EventHandler(this.MenuStripXmlConvertHtmlView_Click);
             // 
             // gridView1
             // 
@@ -303,48 +321,98 @@
             this.ItemCheckEditInvocie.AutoHeight = false;
             this.ItemCheckEditInvocie.Name = "ItemCheckEditInvocie";
             // 
-            // panelUst
-            // 
-            this.panelUst.Controls.Add(this.dateEdit2);
-            this.panelUst.Controls.Add(this.dateEdit1);
-            this.panelUst.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelUst.Location = new System.Drawing.Point(0, 0);
-            this.panelUst.Name = "panelUst";
-            this.panelUst.Size = new System.Drawing.Size(800, 33);
-            this.panelUst.TabIndex = 1;
-            // 
             // panelAna
             // 
-            this.panelAna.Controls.Add(this.gridControlEInvocie);
+            this.panelAna.Controls.Add(this.panelControl2);
+            this.panelAna.Controls.Add(this.panelControl1);
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAna.Location = new System.Drawing.Point(0, 33);
+            this.panelAna.Location = new System.Drawing.Point(0, 0);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(800, 417);
+            this.panelAna.Size = new System.Drawing.Size(800, 450);
             this.panelAna.TabIndex = 2;
             // 
-            // dateEdit1
+            // panelControl2
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(12, 5);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(87, 20);
-            this.dateEdit1.TabIndex = 0;
+            this.panelControl2.Controls.Add(this.gridControlEInvocie);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl2.Location = new System.Drawing.Point(2, 50);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(796, 398);
+            this.panelControl2.TabIndex = 2;
             // 
-            // dateEdit2
+            // panelControl1
             // 
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(115, 5);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Size = new System.Drawing.Size(87, 20);
-            this.dateEdit2.TabIndex = 1;
+            this.panelControl1.Controls.Add(this.groupBox2);
+            this.panelControl1.Controls.Add(this.groupBox3);
+            this.panelControl1.Controls.Add(this.groupBox1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(2, 2);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(796, 48);
+            this.panelControl1.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtPageSize);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Location = new System.Drawing.Point(73, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(112, 44);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Sayfa Boyutu";
+            // 
+            // txtPageSize
+            // 
+            this.txtPageSize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPageSize.EditValue = 30;
+            this.txtPageSize.Location = new System.Drawing.Point(3, 21);
+            this.txtPageSize.Name = "txtPageSize";
+            this.txtPageSize.Size = new System.Drawing.Size(106, 20);
+            this.txtPageSize.TabIndex = 0;
+            this.txtPageSize.Leave += new System.EventHandler(this.txtPageSize_Leave);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtSearch);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox3.Location = new System.Drawing.Point(187, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(262, 42);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Arama Yap";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSearch.Location = new System.Drawing.Point(3, 21);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(256, 20);
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.EditValueChanged += new System.EventHandler(this.txtSearch_EditValueChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtPage);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(2, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(71, 44);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sayfa";
+            // 
+            // txtPage
+            // 
+            this.txtPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPage.EditValue = 1;
+            this.txtPage.Location = new System.Drawing.Point(3, 21);
+            this.txtPage.Name = "txtPage";
+            this.txtPage.Size = new System.Drawing.Size(65, 20);
+            this.txtPage.TabIndex = 0;
             // 
             // EInvoice
             // 
@@ -352,7 +420,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelAna);
-            this.Controls.Add(this.panelUst);
             this.Name = "EInvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "E-Fatura ";
@@ -361,14 +428,18 @@
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemCheckEditInvocie)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelUst)).EndInit();
-            this.panelUst.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelAna)).EndInit();
             this.panelAna.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtPageSize.Properties)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtPage.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,7 +448,6 @@
 
         private DevExpress.XtraGrid.GridControl gridControlEInvocie;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.PanelControl panelUst;
         private DevExpress.XtraEditors.PanelControl panelAna;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MenuStripAppearanceSave;
@@ -401,7 +471,14 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit ItemCheckEditInvocie;
         private System.Windows.Forms.ToolStripMenuItem ContextMenuXmlConverting;
         private System.Windows.Forms.ToolStripMenuItem MenuStripAppreanceInvoncie;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
+        private System.Windows.Forms.ToolStripMenuItem MenuStripXmlConvertHtmlView;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private DevExpress.XtraEditors.TextEdit txtPage;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private DevExpress.XtraEditors.TextEdit txtPageSize;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private DevExpress.XtraEditors.TextEdit txtSearch;
     }
 }

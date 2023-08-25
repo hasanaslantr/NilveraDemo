@@ -9,80 +9,37 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms; 
+using System.Windows.Forms;
 using iTextSharp.text;
 using System.Drawing.Printing;
+using NLayer.Entities.Models;
+using DemoInvoncie.ConvertProcess;
 
 namespace DemoInvoncie
 {
     public partial class HtmlViewXsltInvoice : DevExpress.XtraEditors.XtraForm
     {
         string _xsltMessage;
+
+        ConvertStringToPdf _convertStringToPdf = new ConvertStringToPdf();
+        RequestResponse<Invoice> _response = new RequestResponse<Invoice>();
+
         public HtmlViewXsltInvoice(string xsltMessage)
         {
             InitializeComponent();
             _xsltMessage = xsltMessage;
-        } 
+        }
         private void HtmlViewXsltInvoice_Load(object sender, EventArgs e)
         {
-           // htmlContentControl1.HtmlTemplate.Template = _xsltMessage;
+            // htmlContentControl1.HtmlTemplate.Template = _xsltMessage;
             webBrowser1.DocumentText = _xsltMessage;
+        }
+
+        private async void BtnPdfConvert_Click(object sender, EventArgs e)
+        {
+            var link = "https://apitest.nilvera.com/einvoice/Purchase/00155D00-1100-1EDE-90BC-B026E3D8C10D/pdf";
+            await _convertStringToPdf.stringToPdfAsync(await _response.GetStringAsync(link));
         }  
-
-        private void BtnPdfConvert_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "PDF Dosyaları|*.pdf";
-            saveFileDialog.Title = "PDF Dosyasını Kaydet";
-
-            
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                ConvertHtmlToPdf(_xsltMessage, saveFileDialog.FileName);
-                MessageBox.Show("Dosyanız başarılı bir şekilde kaydedildi", "Bilgi Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-        } 
-        static void ConvertHtmlToPdf(string htmlContent, string pdfFilePath)
-        {
-            using (FileStream fs = new FileStream(pdfFilePath, FileMode.Create))
-            {
-                Document pdfDoc = new Document(PageSize.A4);
-                PdfWriter writer = PdfWriter.GetInstance(pdfDoc, fs);
-
-                pdfDoc.Open();
-
-                StringReader sr = new StringReader(htmlContent);
-                HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
-                htmlparser.Parse(sr);
-
-                pdfDoc.Close();
-            }
-        }
-
-        private void BtnWriteDocumnet_Click(object sender, EventArgs e)
-        {
-            PrintDocument pd = new PrintDocument();
-            pd.PrintPage += (s, args) =>
-            {
-                using (var stringToStream = new System.IO.MemoryStream(System.Text.Encoding.UTF8.GetBytes(_xsltMessage)))
-                {
-                    using (var webBrowser = new WebBrowser())
-                    {
-                        webBrowser.DocumentStream = stringToStream;
-                        webBrowser.Print();
-                    }
-                }
-            }; 
-            PrintDialog printDialog = new PrintDialog();
-            printDialog.Document = pd;
-
-            if (printDialog.ShowDialog() == DialogResult.OK)
-            {
-                pd.Print();
-            }
-        }
     }
-   
+
 }

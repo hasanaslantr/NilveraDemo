@@ -1,6 +1,7 @@
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DemoInvoncie.exe.config
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DemoInvoncie.exe
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DemoInvoncie.pdb
+C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.BonusSkins.v21.2.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.Data.Desktop.v21.2.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.Data.v21.2.dll
@@ -12,6 +13,7 @@ C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraEditor
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraGrid.v21.2.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraLayout.v21.2.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraPrinting.v21.2.dll
+C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\itextsharp.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\Newtonsoft.Json.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\NLayer.Entities.dll
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\nSoft.Shared.Common.dll
@@ -31,6 +33,7 @@ C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraEditor
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraGrid.v21.2.xml
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraLayout.v21.2.xml
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.XtraPrinting.v21.2.xml
+C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\itextsharp.xml
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\Newtonsoft.Json.xml
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.Pdf.v21.2.Core.xml
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\DevExpress.Pdf.v21.2.Drawing.xml
@@ -98,6 +101,7 @@ C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.EInvoice
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.Home.resources
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.InvoncieType.resources
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.NewInvoncieCreate.resources
+C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.Login.resources
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.Properties.Resources.resources
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.csproj.GenerateResource.cache
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.exe.licenses
@@ -105,7 +109,3 @@ C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.csproj.C
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.csproj.CopyComplete
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.exe
 C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.pdb
-C:\Users\fakia\source\repos\Efatura\DemoInvoncie\obj\Debug\DemoInvoncie.Login.resources
-C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\itextsharp.dll
-C:\Users\fakia\source\repos\Efatura\DemoInvoncie\bin\Debug\itextsharp.xml

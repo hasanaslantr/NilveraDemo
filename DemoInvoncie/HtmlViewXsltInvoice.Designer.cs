@@ -94,7 +94,6 @@
             this.BtnWriteDocumnet.Size = new System.Drawing.Size(84, 26);
             this.BtnWriteDocumnet.TabIndex = 0;
             this.BtnWriteDocumnet.Text = "Yazdır";
-            this.BtnWriteDocumnet.Click += new System.EventHandler(this.BtnWriteDocumnet_Click);
             // 
             // panelControl2
             // 

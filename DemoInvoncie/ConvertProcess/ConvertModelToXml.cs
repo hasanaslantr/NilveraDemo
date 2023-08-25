@@ -5,14 +5,16 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace DemoInvoncie.Convert
+namespace DemoInvoncie.ConvertProcess
 {
     public class ConvertModelToXml<T> where T : class
     {
-        public DialogResult ModelToXml(T values)
+        public async Task<DialogResult> ModelToXmlAsync(T values)
         {
             try
             {
@@ -33,5 +35,24 @@ namespace DemoInvoncie.Convert
             }
             catch (Exception ex) { return MessageBox.Show(ex.Message, "Uyarı Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
+
+        public async Task<string> ModelToXmlStringAsync(T values)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(T));
+                using (StringWriter stringWriter = new StringWriter())
+                {
+                    serializer.Serialize(stringWriter, values);
+                    return stringWriter.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("XML dönüştürme sırasında bir hata oluştu: " + ex.Message);
+            }
+        }
+
+
     }
 }

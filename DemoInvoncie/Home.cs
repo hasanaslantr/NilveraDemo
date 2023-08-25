@@ -1,4 +1,6 @@
-﻿namespace DemoInvoncie
+﻿using System.Windows.Forms;
+
+namespace DemoInvoncie
 {
     public partial class Home : DevExpress.XtraEditors.XtraForm
     {
@@ -18,6 +20,11 @@
             EInvoice eInvoice = new EInvoice();
             eInvoice.MdiParent = this;
             eInvoice.Show();
+        }
+
+        private void Home_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
