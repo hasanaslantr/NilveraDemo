@@ -1,10 +1,8 @@
 ﻿using DemoInvoncie.NilveraApi;
-using NLayer.Entities.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DemoInvoncie
@@ -16,17 +14,15 @@ namespace DemoInvoncie
         public async Task<List<T>> GetListAsync(string link)
         {
             try
-            {
-
+            { 
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_authorization.ApiKey}");
-
+                    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_authorization.ApiKey}"); 
                     HttpResponseMessage response = await client.GetAsync(link);
                     if (response.IsSuccessStatusCode)
                     {
                         string jsonData = await response.Content.ReadAsStringAsync();
-                        var apiResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<ApiModel<T>>(jsonData);
+                        var apiResponse = JsonConvert.DeserializeObject<ApiModel<T>>(jsonData);
                         var invoicesData = apiResponse.Content;
                         return invoicesData;
                     }
@@ -35,9 +31,7 @@ namespace DemoInvoncie
                 }
             }
             catch (Exception ex) { throw new Exception(ex.Message); }
-        }
-
-
+        } 
         public async Task<List<T>> GetListNoContextAsync(string link)
         {
             try
@@ -45,14 +39,12 @@ namespace DemoInvoncie
 
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_authorization.ApiKey}");
-
+                    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_authorization.ApiKey}"); 
                     HttpResponseMessage response = await client.GetAsync(link);
                     if (response.IsSuccessStatusCode)
                     {
                         string jsonData = await response.Content.ReadAsStringAsync();
-                        var apiResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(jsonData);
-                       
+                        var apiResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(jsonData); 
                         return apiResponse;
                     }
                     else

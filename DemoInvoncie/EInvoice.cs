@@ -1,16 +1,11 @@
 ﻿using DemoInvoncie.ConvertProcess;
 using DemoInvoncie.DevexpressConfigurations;
 using DemoInvoncie.NilveraApi.Invoncie;
-using DevExpress.Utils.DirectXPaint;
 using NLayer.Entities.Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using System.Xml;
-using System.Xml.Serialization;
-using System.Xml.Xsl;
 
 namespace DemoInvoncie
 {
@@ -50,10 +45,10 @@ namespace DemoInvoncie
         }
 
 
-        private void ContextMenuXmlConverting_Click(object sender, EventArgs e)
+        private async void ContextMenuXmlConverting_Click(object sender, EventArgs e)
         {
             var selectedInvoice = _invoices.FirstOrDefault(x => x.UUID == gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "UUID")?.ToString());
-            convertModelToXml.ModelToXmlAsync(selectedInvoice);
+            await convertModelToXml.ModelToXmlAsync(selectedInvoice);
         }
 
 
@@ -65,7 +60,7 @@ namespace DemoInvoncie
             var uuid = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "UUID")?.ToString();
 
             HtmlViewXsltInvoice htmlView = new HtmlViewXsltInvoice(await _response.GetStringAsync($"https://apitest.nilvera.com/einvoice/Purchase/{UUID}/html"));
-            htmlView.ShowDialog(); 
+            htmlView.ShowDialog();
         }
 
         private async void MenuStripXmlConvertHtmlView_Click(object sender, EventArgs e)
@@ -75,7 +70,7 @@ namespace DemoInvoncie
             var xmlString = await convertModelToXml.ModelToXmlStringAsync(selectedInvoice);
             string htmlString = await _convertXmlToHtml.XmlToHtmlAsync(xmlString);
             HtmlViewXsltInvoice htmlView = new HtmlViewXsltInvoice(htmlString);
-            htmlView.ShowDialog(); 
+            htmlView.ShowDialog();
         }
 
         private async void txtPageSize_Leave(object sender, EventArgs e)
@@ -114,9 +109,9 @@ namespace DemoInvoncie
                 await PageSize();
         }
 
-       
+
     }
-} 
+}
 /*
  
 
